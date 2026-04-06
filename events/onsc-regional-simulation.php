@@ -7,16 +7,16 @@ $ctfUrl = zs_safe_http_url((string)($siteContent['ctf_url'] ?? ''), 'https://ctf
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Upcoming Cybersecurity Olympiad regional simulation event page">
-  <title>Cybersecurity Regional Simulation - Aegis Lab Events</title>
+  <meta name="description" content="Upcoming OSC Regional Practice event page">
+  <title>OSC Regional Practice - Aegis Lab Events</title>
   <link rel="icon" type="image/x-icon" href="/Aegis_favicon.ico">
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Jersey+10&family=Micro+5&family=Press+Start+2P&family=Space+Grotesk:wght@400;500;700&family=VT323&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=20260329mobilemenufix6">
+  <link rel="stylesheet" href="/styles.css?v=20260406eventsuniform11">
 </head>
-<body class="sub-page">
+<body class="sub-page upcoming-event-page">
   <header class="site-header">
     <a class="site-brand-link" href="/" aria-label="Go to Aegis Lab home page">
       <img class="site-brand-logo" src="/Aegis.png" alt="Aegis Lab logo">
@@ -42,7 +42,7 @@ $ctfUrl = zs_safe_http_url((string)($siteContent['ctf_url'] ?? ''), 'https://ctf
       <p class="back-link"><a href="/events">&larr; Back to all events</a></p>
       <article class="event-article event-article-page">
         <p class="event-article-eyebrow">Upcoming Event</p>
-        <h1 class="event-article-title">Cybersecurity Regional Simulation</h1>
+        <h1 class="event-article-title">OSC Regional Practice</h1>
         <p class="event-article-date">April 21, 2026</p>
 
         <div class="event-article-content upcoming-event-content">

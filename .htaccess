@@ -43,6 +43,7 @@ RewriteRule ^404/?$ 404.php [L,QSA]
 
 # Legacy event slug redirect.
 RewriteRule ^events/aegis-lab-saturday-kickoff/?$ /events/aegis-lab-kickoff [R=301,L]
+RewriteRule ^events/aegis-lab-welcome-kickoff/?$ /events/aegis-lab-kickoff [R=301,L]
 
 # Event detail routes.
 RewriteRule ^events/([A-Za-z0-9-]+)/?$ events/$1.php [L,QSA]

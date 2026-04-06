@@ -123,7 +123,7 @@ function zs_member_social_profiles(array $member): array
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Jersey+10&family=Micro+5&family=Press+Start+2P&family=Space+Grotesk:wght@400;500;700&family=VT323&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=20260329memberwidthfix11">
+  <link rel="stylesheet" href="/styles.css?v=20260406membermobilecenter5">
   <script type="application/ld+json"><?= $breadcrumbStructuredDataJson ?></script>
 </head>
 <body class="sub-page">

@@ -38,14 +38,14 @@ $events = [];
 
 $futureEvents = [
   [
-    'title' => 'Aegis Lab Welcome Kickoff',
+    'title' => 'Aegis Lab Kickoff',
     'date_left' => 'April 20, 2026',
     'summary' => 'Official kickoff session with a live demonstration, team presentation, and Pizza & Chips for attendees.',
     'badge' => 'Upcoming',
     'url' => '/events/aegis-lab-kickoff',
   ],
   [
-    'title' => 'Cybersecurity Regional Simulation',
+    'title' => 'OSC Regional Practice',
     'date_left' => 'April 21, 2026',
     'summary' => 'Practice simulation for the Cybersecurity Olympiad regional stage on CyberEDU.',
     'badge' => 'Upcoming',
@@ -76,7 +76,7 @@ $futureEvents = [
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Jersey+10&family=Micro+5&family=Press+Start+2P&family=Space+Grotesk:wght@400;500;700&family=VT323&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=20260329mobilemenufix6">
+  <link rel="stylesheet" href="/styles.css?v=20260406eventsuniform11">
   <script type="application/ld+json"><?= $breadcrumbStructuredDataJson ?></script>
 </head>
 <body class="sub-page">

@@ -9,14 +9,14 @@ $mapsEmbedUrl = 'https://www.google.com/maps?q=Strada%201%20Decembrie%201918%207
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Aegis Lab Welcome Kickoff event page">
-  <title>Aegis Lab Welcome Kickoff - Aegis Lab Events</title>
+  <meta name="description" content="Aegis Lab Kickoff event page">
+  <title>Aegis Lab Kickoff - Aegis Lab Events</title>
   <link rel="icon" type="image/x-icon" href="/Aegis_favicon.ico">
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&family=DotGothic16&family=IBM+Plex+Mono:wght@400;600&family=Jersey+10&family=Micro+5&family=Press+Start+2P&family=Space+Grotesk:wght@400;500;700&family=Syne:wght@400;600;700;800&family=VT323&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=20260329mobilemenufix6">
+  <link rel="stylesheet" href="/styles.css?v=20260406eventsuniform11">
   <style>
     .kickoff-content-page {
       --kick-fire: #F5820A;
@@ -666,9 +666,24 @@ $mapsEmbedUrl = 'https://www.google.com/maps?q=Strada%201%20Decembrie%201918%207
       .kickoff-content-page .kickoff-sparkle-layer {
         z-index: 72;
       }
+
+      .kickoff-content-page .back-link {
+        margin: 0 0 2.15rem !important;
+      }
     }
 
     @media (max-width: 720px) {
+      .kickoff-content-page .kickoff-facts-strip {
+        margin: 1.55rem 0 1.95rem;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0.75px solid rgba(245,130,10,0.62);
+        border-bottom: 0.75px solid rgba(245,130,10,0.62);
+        border-radius: 0;
+        background: transparent;
+        overflow: visible;
+      }
+
       .kickoff-content-page .kickoff-facts-grid {
         grid-template-columns: 1fr;
       }
@@ -679,12 +694,28 @@ $mapsEmbedUrl = 'https://www.google.com/maps?q=Strada%201%20Decembrie%201918%207
       }
 
       .kickoff-content-page .kickoff-fact-cell {
-        border-bottom: 0.5px solid var(--kick-border);
-        padding: 1.1rem 1rem;
+        border-bottom: 0.75px solid rgba(245,130,10,0.48);
+        padding: 0.95rem 0.9rem;
+      }
+
+      .kickoff-content-page .kickoff-fact-cell:nth-last-child(-n + 2) {
+        border-bottom: 0.75px solid rgba(245,130,10,0.48);
       }
 
       .kickoff-content-page .kickoff-fact-cell:last-child {
         border-bottom: 0;
+      }
+
+      .kickoff-content-page .kickoff-fact-label {
+        font-size: 0.67rem;
+        letter-spacing: 0.11em;
+        margin: 0 0 0.36rem;
+      }
+
+      .kickoff-content-page .kickoff-fact-value {
+        font-size: 0.98rem;
+        font-weight: 600;
+        line-height: 1.24;
       }
 
       .kickoff-content-page .kickoff-timeline::before {
@@ -706,6 +737,20 @@ $mapsEmbedUrl = 'https://www.google.com/maps?q=Strada%201%20Decembrie%201918%207
         font-size: 2.6rem;
       }
 
+      .kickoff-content-page .kickoff-food-title {
+        font-size: 1.05rem;
+      }
+
+      .kickoff-content-page .kickoff-food-desc {
+        font-size: 0.82rem;
+        line-height: 1.52;
+      }
+
+      .kickoff-content-page .kickoff-food-badge {
+        font-size: 0.66rem;
+        padding: 0.24rem 0.58rem;
+      }
+
       .kickoff-content-page .kickoff-map-embed {
         height: 210px;
       }
@@ -716,7 +761,7 @@ $mapsEmbedUrl = 'https://www.google.com/maps?q=Strada%201%20Decembrie%201918%207
     }
   </style>
 </head>
-<body class="sub-page kickoff-content-page">
+<body class="sub-page upcoming-event-page kickoff-content-page">
   <div class="kickoff-sparkle-layer" aria-hidden="true"></div>
   <header class="site-header">
     <a class="site-brand-link" href="/" aria-label="Go to Aegis Lab home page">
@@ -743,7 +788,7 @@ $mapsEmbedUrl = 'https://www.google.com/maps?q=Strada%201%20Decembrie%201918%207
       <p class="back-link"><a href="/events">&larr; Back to all events</a></p>
       <article class="event-article event-article-page">
         <p class="event-article-eyebrow">Upcoming Event</p>
-        <h1 class="event-article-title">Aegis Lab Welcome Kickoff</h1>
+        <h1 class="event-article-title">Aegis Lab Kickoff</h1>
         <p class="event-article-date">April 20, 2026</p>
 
         <div class="event-article-content kickoff-event-content">
@@ -897,7 +942,7 @@ $mapsEmbedUrl = 'https://www.google.com/maps?q=Strada%201%20Decembrie%201918%207
                 <div class="kickoff-food-badges">
                   <span class="kickoff-food-badge">🍕 Pizza</span>
                   <span class="kickoff-food-badge">🥔 Chips</span>
-                  <span class="kickoff-food-badge">Free for all attendees</span>
+                  <span class="kickoff-food-badge">Free</span>
                 </div>
               </div>
             </div>
