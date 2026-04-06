@@ -1,0 +1,55 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Runtime data and caches (contains visitor/IP/admin runtime data)
+data/*
+!data/.gitkeep
+# Explicit sensitive runtime files (already covered by data/*, kept for clarity)
+data/dashboard_admin_auth.json
+data/dashboard_admin_password_hash.txt
+data/analytics.json
+data/dashboard_login_limits.json
+data/dashboard_runtime_cache.json
+data/dashboard_ctf_analytics_cache.json
+data/ip_country_cache.json
+data/ctf_challenge_log_paths.json
+data/site_content.json
+data/members.json
+
+# Internal local/operator notes (not for public repo)
+agent_colab.txt
+inst_ico.txt
+response_agent.txt
+codex_resume.txt
+SERVER_MIGRATION_SETUP.md
+
+# Logs and dumps
+*.log
+*.log.*
+logs/
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# Editor/OS noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependency/build cache
+node_modules/
+vendor/
+coverage/

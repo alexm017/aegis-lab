@@ -1,0 +1,55 @@
+RewriteEngine On
+Options -Indexes
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), camera=(), microphone=()"
+  Header always set Cross-Origin-Resource-Policy "same-origin"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+# Protect private app data and internal code.
+RewriteRule ^(?:data|lib)(?:/|$) - [F,L,NC]
+RewriteRule ^(?:agent_colab\.txt|response_agent\.txt|codex_resume\.txt|inst_ico\.txt|SERVER_MIGRATION_SETUP\.md|create_migration_bundle\.sh|post_migration_checks\.sh)$ - [F,L,NC]
+RewriteRule (^|/)\.(?:env|git|svn|hg)(?:/|$) - [F,L,NC]
+RewriteRule \.(?:sql|sqlite3?|bak|old|swp|swo)$ - [F,L,NC]
+
+# Redirect explicit .php requests to clean URLs (strict allowlist).
+RewriteCond %{THE_REQUEST} \s/+index\.php(?:[?\s]|$) [NC]
+RewriteRule ^index\.php$ / [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+((?:about|members|events|national-olympiads|team-ctf|gallery|dashboard)(?:/[A-Za-z0-9-]+)?)\.php(?:[?\s]|$) [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# Home route.
+RewriteRule ^$ index.php [L]
+
+# SEO routes.
+RewriteRule ^sitemap\.xml$ sitemap.php [L,QSA]
+
+# Public page routes.
+RewriteRule ^about/?$ about.php [L,QSA]
+RewriteRule ^members/?$ members.php [L,QSA]
+RewriteRule ^events/?$ events.php [L,QSA]
+RewriteRule ^national-olympiads/?$ national-olympiads.php [L,QSA]
+RewriteRule ^gallery/?$ gallery.php [L,QSA]
+RewriteRule ^team-ctf/?$ team-ctf.php [L,QSA]
+RewriteRule ^dashboard/?$ dashboard.php [L,QSA]
+RewriteRule ^analytics-viewport/?$ analytics-viewport.php [L,QSA]
+
+# Legacy event slug redirect.
+RewriteRule ^events/aegis-lab-saturday-kickoff/?$ /events/aegis-lab-kickoff [R=301,L]
+
+# Event detail routes.
+RewriteRule ^events/([A-Za-z0-9-]+)/?$ events/$1.php [L,QSA]
+
+# Existing files or directories.
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Generic fallback route: /page -> /page.php
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L,QSA]

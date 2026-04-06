@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /data/
+Disallow: /lib/
+
+Sitemap: https://aegislab.ro/sitemap.xml
