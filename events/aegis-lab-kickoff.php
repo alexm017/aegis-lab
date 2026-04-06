@@ -68,7 +68,9 @@ $mapsEmbedUrl = 'https://www.google.com/maps?q=Strada%201%20Decembrie%201918%207
     }
 
     .kickoff-content-page .kickoff-fact-label {
-      display: block;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.34rem;
       min-height: 0.95rem;
       font-family: "DM Mono", monospace;
       font-size: 0.75rem;
@@ -78,6 +80,25 @@ $mapsEmbedUrl = 'https://www.google.com/maps?q=Strada%201%20Decembrie%201918%207
       letter-spacing: 0.13em;
       margin: 0 0 0.44rem;
       line-height: 1;
+    }
+
+    .kickoff-content-page .kickoff-fact-label-icon {
+      width: 0.8rem;
+      height: 0.8rem;
+      display: inline-block;
+      flex: 0 0 auto;
+      opacity: 0.92;
+    }
+
+    .kickoff-content-page .kickoff-fact-label-icon svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
 
     .kickoff-content-page .kickoff-fact-value {
@@ -712,6 +733,11 @@ $mapsEmbedUrl = 'https://www.google.com/maps?q=Strada%201%20Decembrie%201918%207
         margin: 0 0 0.36rem;
       }
 
+      .kickoff-content-page .kickoff-fact-label-icon {
+        width: 0.76rem;
+        height: 0.76rem;
+      }
+
       .kickoff-content-page .kickoff-fact-value {
         font-size: 0.98rem;
         font-weight: 600;
@@ -795,25 +821,25 @@ $mapsEmbedUrl = 'https://www.google.com/maps?q=Strada%201%20Decembrie%201918%207
           <section class="kickoff-facts-strip" aria-label="Quick facts">
             <div class="kickoff-facts-grid">
               <div class="kickoff-fact-cell">
-                <p class="kickoff-fact-label">Date</p>
+                <p class="kickoff-fact-label"><span class="kickoff-fact-label-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="15" rx="1.6"></rect><path d="M7.5 3.8v3.1"></path><path d="M16.5 3.8v3.1"></path><path d="M3.5 10h17"></path></svg></span>Date</p>
                 <p class="kickoff-fact-value">Monday, April 20, 2026</p>
               </div>
               <div class="kickoff-fact-cell">
-                <p class="kickoff-fact-label">Duration</p>
+                <p class="kickoff-fact-label"><span class="kickoff-fact-label-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 8.2v4.2l2.6 1.6"></path></svg></span>Duration</p>
                 <p class="kickoff-fact-value kickoff-fact-value-lines">
                   <span>15:00-16:00</span>
                   <span>(60 Minutes)</span>
                 </p>
               </div>
               <div class="kickoff-fact-cell">
-                <p class="kickoff-fact-label">Venue</p>
+                <p class="kickoff-fact-label"><span class="kickoff-fact-label-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20.6s6.1-5.2 6.1-10a6.1 6.1 0 0 0-12.2 0c0 4.8 6.1 10 6.1 10z"></path><circle cx="12" cy="10.6" r="2.2"></circle></svg></span>Venue</p>
                 <p class="kickoff-fact-value kickoff-fact-value-lines kickoff-fact-value-venue-lines">
                   <span>CN Mihai Eminescu,</span>
                   <span>Petroșani — Sala 20</span>
                 </p>
               </div>
               <div class="kickoff-fact-cell">
-                <p class="kickoff-fact-label">What's included</p>
+                <p class="kickoff-fact-label"><span class="kickoff-fact-label-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7.3 7.8h10.2"></path><path d="M7.3 12h10.2"></path><path d="M7.3 16.2h10.2"></path><path d="M4.7 7.8h.01"></path><path d="M4.7 12h.01"></path><path d="M4.7 16.2h.01"></path></svg></span>What's included</p>
                 <p class="kickoff-fact-value kickoff-fact-value-lines">
                   <span>Presentation</span>
                   <span>Live Demo</span>

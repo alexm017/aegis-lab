@@ -425,6 +425,36 @@ main {
   background: #100a07;
 }
 
+.sponsors-list {
+  margin-top: 2.65rem;
+  display: flex;
+  justify-content: center;
+}
+
+.sponsors-subtitle {
+  margin: 0.08rem 0 0;
+  color: var(--muted);
+}
+
+.sponsor-card {
+  position: relative;
+  display: inline-block;
+  width: min(100%, 372px);
+  border: 3px solid #000000;
+  border-radius: 12px;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.sponsor-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .contact-links {
   margin-top: 0.7rem;
   margin-bottom: 0.6rem;
@@ -1757,6 +1787,11 @@ footer p {
 
   .location-map {
     height: 260px;
+  }
+
+  .sponsor-card {
+    width: min(100%, 294px);
+    padding: 0;
   }
 
   .members-page {

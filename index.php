@@ -136,7 +136,7 @@ if (!is_string($homeStructuredDataJson)) {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Jersey+10&family=Micro+5&family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@400;500;700&family=VT323&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=20260329mobiletitlefix9">
+  <link rel="stylesheet" href="/styles.css?v=20260407sponsors14">
   <script type="application/ld+json"><?= $homeStructuredDataJson ?></script>
 </head>
 <body class="home-page">
@@ -254,6 +254,16 @@ if (!is_string($homeStructuredDataJson)) {
           <p><strong>Google Maps:</strong> <a class="text-link" href="<?= zs_escape($mapUrl) ?>" target="_blank" rel="noopener noreferrer">Open in Google Maps</a></p>
           <div class="location-map-wrap">
             <iframe class="location-map" src="<?= zs_escape($mapEmbedUrl) ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="High school location on Google Maps" allowfullscreen></iframe>
+          </div>
+        </section>
+
+        <section id="sponsors" class="section-divider sponsors-section">
+          <h2>Our Partners</h2>
+          <p class="sponsors-subtitle">Extended by those who believe in the work</p>
+          <div class="sponsors-list">
+            <div class="sponsor-card">
+              <img class="sponsor-logo" src="/assets/sponsors/eminescu_sponsor_final.png" alt="Colegiul Național Mihai Eminescu sponsor logo">
+            </div>
           </div>
         </section>
       </div>
