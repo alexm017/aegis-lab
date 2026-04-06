@@ -12,6 +12,7 @@ $mapsEmbedUrl = 'https://www.google.com/maps?q=Strada%201%20Decembrie%201918%207
   <meta name="description" content="Aegis Lab Welcome Kickoff event page">
   <title>Aegis Lab Welcome Kickoff - Aegis Lab Events</title>
   <link rel="icon" type="image/x-icon" href="/Aegis_favicon.ico">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&family=DotGothic16&family=IBM+Plex+Mono:wght@400;600&family=Jersey+10&family=Micro+5&family=Press+Start+2P&family=Space+Grotesk:wght@400;500;700&family=Syne:wght@400;600;700;800&family=VT323&display=swap" rel="stylesheet">

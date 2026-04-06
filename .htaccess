@@ -1,5 +1,6 @@
 RewriteEngine On
 Options -Indexes
+ErrorDocument 404 /404
 
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
@@ -38,6 +39,7 @@ RewriteRule ^gallery/?$ gallery.php [L,QSA]
 RewriteRule ^team-ctf/?$ team-ctf.php [L,QSA]
 RewriteRule ^dashboard/?$ dashboard.php [L,QSA]
 RewriteRule ^analytics-viewport/?$ analytics-viewport.php [L,QSA]
+RewriteRule ^404/?$ 404.php [L,QSA]
 
 # Legacy event slug redirect.
 RewriteRule ^events/aegis-lab-saturday-kickoff/?$ /events/aegis-lab-kickoff [R=301,L]

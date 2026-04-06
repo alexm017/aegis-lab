@@ -2108,6 +2108,7 @@ header('X-Robots-Tag: noindex, nofollow, noarchive', true);
   <meta name="robots" content="noindex, nofollow, noarchive">
   <title>Aegis Lab Dashboard</title>
   <link rel="icon" type="image/x-icon" href="/Aegis_favicon.ico">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
   <style>
     :root {
       --bg: #f4f7fb;
