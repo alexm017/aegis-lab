@@ -273,6 +273,7 @@ main {
 }
 
 .hero-copy {
+  width: min(100%, 760px);
   max-width: 760px;
   justify-self: start;
   margin-left: -0.9rem;
@@ -386,7 +387,7 @@ main {
 .home-details {
   background: #14100b;
   border-top: 1px solid #2f1d13;
-  padding: 3rem 0 3.4rem;
+  padding: 3rem 0 2.6rem;
 }
 
 .home-details-inner {
@@ -426,7 +427,7 @@ main {
 }
 
 .sponsors-list {
-  margin-top: 2.65rem;
+  margin-top: 1.9rem;
   display: flex;
   justify-content: center;
 }
@@ -439,7 +440,7 @@ main {
 .sponsor-card {
   position: relative;
   display: inline-block;
-  width: min(100%, 372px);
+  width: min(100%, 288px);
   border: 3px solid #000000;
   border-radius: 12px;
   background: transparent;
@@ -1712,6 +1713,7 @@ footer p {
     justify-self: center;
     transform: translateY(-0.35rem);
     margin: 0 auto;
+    width: min(94vw, 700px);
     max-width: min(94vw, 700px);
     position: relative;
     padding-bottom: 0.72rem;
@@ -1790,7 +1792,7 @@ footer p {
   }
 
   .sponsor-card {
-    width: min(100%, 294px);
+    width: min(100%, 228px);
     padding: 0;
   }
 

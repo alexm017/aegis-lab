@@ -21,8 +21,11 @@ RewriteRule \.(?:sql|sqlite3?|bak|old|swp|swo)$ - [F,L,NC]
 RewriteCond %{THE_REQUEST} \s/+index\.php(?:[?\s]|$) [NC]
 RewriteRule ^index\.php$ / [R=301,L]
 
-RewriteCond %{THE_REQUEST} \s/+((?:about|members|events|national-olympiads|team-ctf|gallery|dashboard)(?:/[A-Za-z0-9-]+)?)\.php(?:[?\s]|$) [NC]
+RewriteCond %{THE_REQUEST} \s/+((?:about|members|events|team-ctf|gallery|dashboard|roadmap)(?:/[A-Za-z0-9-]+)?)\.php(?:[?\s]|$) [NC]
 RewriteRule ^ /%1 [R=301,L,NE]
+
+RewriteCond %{THE_REQUEST} \s/+national-olympiads\.php(?:[?\s]|$) [NC]
+RewriteRule ^national-olympiads\.php$ /roadmap [R=301,L]
 
 # Home route.
 RewriteRule ^$ index.php [L]
@@ -34,7 +37,8 @@ RewriteRule ^sitemap\.xml$ sitemap.php [L,QSA]
 RewriteRule ^about/?$ about.php [L,QSA]
 RewriteRule ^members/?$ members.php [L,QSA]
 RewriteRule ^events/?$ events.php [L,QSA]
-RewriteRule ^national-olympiads/?$ national-olympiads.php [L,QSA]
+RewriteRule ^national-olympiads/?$ /roadmap [R=301,L]
+RewriteRule ^roadmap/?$ roadmap.php [L,QSA]
 RewriteRule ^gallery/?$ gallery.php [L,QSA]
 RewriteRule ^team-ctf/?$ team-ctf.php [L,QSA]
 RewriteRule ^dashboard/?$ dashboard.php [L,QSA]

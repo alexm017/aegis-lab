@@ -136,7 +136,7 @@ if (!is_string($homeStructuredDataJson)) {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Jersey+10&family=Micro+5&family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@400;500;700&family=VT323&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=20260407sponsors14">
+  <link rel="stylesheet" href="/styles.css?v=20260416sponsors16">
   <script type="application/ld+json"><?= $homeStructuredDataJson ?></script>
 </head>
 <body class="home-page">
@@ -154,7 +154,7 @@ if (!is_string($homeStructuredDataJson)) {
       <a href="/members">Members</a>
       <a href="/events">Events</a>
       <a href="<?= zs_escape($ctfUrl) ?>" target="_blank" rel="noopener noreferrer">Team CTF Website</a>
-      <a href="/national-olympiads">Roadmap</a>
+      <a href="/roadmap">Roadmap</a>
       <a href="/gallery">Gallery</a>
       <a href="#home-details">About</a>
     </nav>

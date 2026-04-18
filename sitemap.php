@@ -75,7 +75,7 @@ zs_sitemap_add_url($urls, '/about', $root . '/about.php', 'monthly', '0.7');
 zs_sitemap_add_url($urls, '/members', $root . '/members.php', 'weekly', '0.8');
 zs_sitemap_add_url($urls, '/events', $root . '/events.php', 'weekly', '0.9');
 zs_sitemap_add_url($urls, '/team-ctf', $root . '/team-ctf.php', 'weekly', '0.7');
-zs_sitemap_add_url($urls, '/national-olympiads', $root . '/national-olympiads.php', 'weekly', '0.8');
+zs_sitemap_add_url($urls, '/roadmap', $root . '/roadmap.php', 'weekly', '0.8');
 zs_sitemap_add_url($urls, '/gallery', $root . '/gallery.php', 'monthly', '0.7');
 
 foreach (zs_sitemap_event_routes($root . '/events.php') as $eventRoute) {

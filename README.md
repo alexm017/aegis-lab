@@ -14,7 +14,7 @@ Live URL: **https://aegislab.ro/**
 - `/members` - Team members
 - `/events` - Upcoming and past events
 - `/events/aegis-lab-kickoff` - Kickoff event page
-- `/national-olympiads` - Competition roadmap
+- `/roadmap` - Competition roadmap
 - `/gallery` - Team gallery
 - `/team-ctf` - Team CTF link page
 - `/dashboard` - Private admin dashboard

@@ -94,7 +94,7 @@ $futureEvents = [
       <a href="/members">Members</a>
       <a href="/events" class="active">Events</a>
       <a href="<?= zs_escape($ctfUrl) ?>" target="_blank" rel="noopener noreferrer">Team CTF Website</a>
-      <a href="/national-olympiads">Roadmap</a>
+      <a href="/roadmap">Roadmap</a>
       <a href="/gallery">Gallery</a>
       <a href="/#home-details">About</a>
     </nav>
